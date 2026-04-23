@@ -11,58 +11,49 @@
             font-family: 'Inter', sans-serif; 
             background-color: #000000; 
         }
-        .photo-card {
-            box-shadow: 0 4px 20px rgba(249, 115, 22, 0.1);
-            transition: all 0.3s ease;
-        }
-        .photo-card:hover {
-            box-shadow: 0 10px 30px rgba(249, 115, 22, 0.3);
-            transform: translateY(-5px);
-        }
+        /* Estilização da barra de rolagem para combinar com o tema */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #000; }
+        ::-webkit-scrollbar-thumb { background: #f97316; border-radius: 10px; }
     </style>
 </head>
 <body class="text-white antialiased">
 
-    <header class="py-20 px-6 text-center border-b border-gray-900">
+    <header class="py-16 px-6 text-center border-b border-gray-900">
         <h1 class="text-3xl md:text-5xl font-black uppercase tracking-tighter italic">
             Acompanhe como foi a <span class="text-orange-500">Páscoa</span> 
             <br> na <span class="text-orange-500">CIE Engrecon</span>
         </h1>
-        <div class="mt-8 w-20 h-1.5 bg-orange-500 mx-auto rounded-full"></div>
+        <div class="mt-6 w-20 h-1.5 bg-orange-500 mx-auto rounded-full"></div>
     </header>
 
-    <main class="max-w-6xl mx-auto py-16 px-6">
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+    <main class="max-w-[1400px] mx-auto py-12 px-6">
+        <div class="flex flex-wrap justify-center gap-6">
             
-            <div class="photo-card relative overflow-hidden rounded-2xl bg-gray-900 border border-gray-800">
-                <img src="img/foto1.jpg" alt="Páscoa Engrecon" class="w-full h-[450px] object-cover">
-                <div class="absolute inset-0 border-b-4 border-orange-500 opacity-0 hover:opacity-100 transition-opacity"></div>
+            <div class="flex-none w-full sm:w-[300px] lg:w-[400px] overflow-hidden rounded-xl border border-gray-800 bg-gray-900 transition-all duration-300 hover:border-orange-500">
+                <img src="img/foto1.jpeg" alt="Páscoa Engrecon" class="w-full h-[500px] object-cover">
             </div>
 
-            <div class="photo-card relative overflow-hidden rounded-2xl bg-gray-900 border border-gray-800">
-                <img src="img/foto2.jpg" alt="Páscoa Engrecon" class="w-full h-[450px] object-cover">
-                <div class="absolute inset-0 border-b-4 border-orange-500 opacity-0 hover:opacity-100 transition-opacity"></div>
+            <div class="flex-none w-full sm:w-[300px] lg:w-[400px] overflow-hidden rounded-xl border border-gray-800 bg-gray-900 transition-all duration-300 hover:border-orange-500">
+                <img src="img/foto2.jpeg" alt="Páscoa Engrecon" class="w-full h-[500px] object-cover">
             </div>
 
-            <div class="photo-card relative overflow-hidden rounded-2xl bg-gray-900 border border-gray-800">
-                <img src="img/foto3.jpg" alt="Páscoa Engrecon" class="w-full h-[450px] object-cover">
-                <div class="absolute inset-0 border-b-4 border-orange-500 opacity-0 hover:opacity-100 transition-opacity"></div>
+            <div class="flex-none w-full sm:w-[300px] lg:w-[400px] overflow-hidden rounded-xl border border-gray-800 bg-gray-900 transition-all duration-300 hover:border-orange-500">
+                <img src="img/foto3.jpeg" alt="Páscoa Engrecon" class="w-full h-[500px] object-cover">
             </div>
 
-            <div class="photo-card relative overflow-hidden rounded-2xl bg-gray-900 border border-gray-800">
-                <img src="img/foto4.jpg" alt="Páscoa Engrecon" class="w-full h-[450px] object-cover">
-                <div class="absolute inset-0 border-b-4 border-orange-500 opacity-0 hover:opacity-100 transition-opacity"></div>
+            <div class="flex-none w-full sm:w-[300px] lg:w-[400px] overflow-hidden rounded-xl border border-gray-800 bg-gray-900 transition-all duration-300 hover:border-orange-500">
+                <img src="img/foto4.jpeg" alt="Páscoa Engrecon" class="w-full h-[500px] object-cover">
             </div>
 
-            <div class="photo-card relative overflow-hidden rounded-2xl bg-gray-900 border border-gray-800">
-                <img src="img/foto5.jpg" alt="Páscoa Engrecon" class="w-full h-[450px] object-cover">
-                <div class="absolute inset-0 border-b-4 border-orange-500 opacity-0 hover:opacity-100 transition-opacity"></div>
+            <div class="flex-none w-full sm:w-[300px] lg:w-[400px] overflow-hidden rounded-xl border border-gray-800 bg-gray-900 transition-all duration-300 hover:border-orange-500">
+                <img src="img/foto5.jpeg" alt="Páscoa Engrecon" class="w-full h-[500px] object-cover">
             </div>
 
         </div>
     </main>
 
-    <footer class="py-16 border-t border-gray-900 text-center">
+    <footer class="py-12 border-t border-gray-900 text-center">
         <p class="text-gray-600 text-xs font-bold tracking-[0.3em] uppercase">
             CIE <span class="text-orange-500">ENGRECON</span> &copy; 2026
         </p>
