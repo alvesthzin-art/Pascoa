@@ -3,74 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Páscoa CIE Engrecon 2026</title>
+    <title>Páscoa CIE Engrecon</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Poppins', sans-serif; }
-        .gradient-bg { background: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%); }
+        body { 
+            font-family: 'Inter', sans-serif; 
+            background-color: #000000; 
+        }
+        .photo-card {
+            box-shadow: 0 4px 20px rgba(249, 115, 22, 0.1);
+            transition: all 0.3s ease;
+        }
+        .photo-card:hover {
+            box-shadow: 0 10px 30px rgba(249, 115, 22, 0.3);
+            transform: translateY(-5px);
+        }
     </style>
 </head>
-<body class="bg-gray-50">
+<body class="text-white antialiased">
 
-    <header class="relative bg-white py-16 px-6 text-center shadow-md">
-        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-32 h-1 bg-orange-500 rounded-b-full"></div>
-        <h1 class="text-4xl md:text-5xl font-extrabold text-slate-800 tracking-tight">
-            Páscoa <span class="text-orange-600">CIE Engrecon</span>
+    <header class="py-20 px-6 text-center border-b border-gray-900">
+        <h1 class="text-3xl md:text-5xl font-black uppercase tracking-tighter italic">
+            Acompanhe como foi a <span class="text-orange-500">Páscoa</span> 
+            <br> na <span class="text-orange-500">CIE Engrecon</span>
         </h1>
-        <p class="mt-4 text-gray-500 text-lg max-w-xl mx-auto">
-            Celebrando a doçura do trabalho em equipe e o compromisso de quem faz a diferença todos os dias.
-        </p>
+        <div class="mt-8 w-20 h-1.5 bg-orange-500 mx-auto rounded-full"></div>
     </header>
 
-    <main class="max-w-6xl mx-auto py-12 px-4">
-        <div class="columns-1 sm:columns-2 lg:columns-3 gap-6 space-y-6">
+    <main class="max-w-6xl mx-auto py-16 px-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
             
-            <div class="break-inside-avoid">
-                <div class="bg-white p-3 rounded-2xl shadow-sm border border-gray-100 hover:shadow-xl transition-shadow duration-300">
-                    <img src="foto1.jpg" alt="Equipe Engrecon" class="rounded-xl w-full">
-                    <p class="mt-3 text-center text-sm font-semibold text-gray-600">Família CIE Engrecon</p>
-                </div>
+            <div class="photo-card relative overflow-hidden rounded-2xl bg-gray-900 border border-gray-800">
+                <img src="img/foto1.jpg" alt="Páscoa Engrecon" class="w-full h-[450px] object-cover">
+                <div class="absolute inset-0 border-b-4 border-orange-500 opacity-0 hover:opacity-100 transition-opacity"></div>
             </div>
 
-            <div class="break-inside-avoid">
-                <div class="bg-white p-3 rounded-2xl shadow-sm border border-gray-100 hover:shadow-xl transition-shadow duration-300">
-                    <img src="foto2.jpg" alt="Equipe na decoração" class="rounded-xl w-full">
-                    <p class="mt-3 text-center text-sm font-semibold text-gray-600">Momento de Celebração</p>
-                </div>
+            <div class="photo-card relative overflow-hidden rounded-2xl bg-gray-900 border border-gray-800">
+                <img src="img/foto2.jpg" alt="Páscoa Engrecon" class="w-full h-[450px] object-cover">
+                <div class="absolute inset-0 border-b-4 border-orange-500 opacity-0 hover:opacity-100 transition-opacity"></div>
             </div>
 
-            <div class="break-inside-avoid">
-                <div class="bg-white p-3 rounded-2xl shadow-sm border border-gray-100 hover:shadow-xl transition-shadow duration-300">
-                    <img src="foto3.jpg" alt="Equipe administrativa" class="rounded-xl w-full">
-                    <p class="mt-3 text-center text-sm font-semibold text-gray-600">Liderança e União</p>
-                </div>
+            <div class="photo-card relative overflow-hidden rounded-2xl bg-gray-900 border border-gray-800">
+                <img src="img/foto3.jpg" alt="Páscoa Engrecon" class="w-full h-[450px] object-cover">
+                <div class="absolute inset-0 border-b-4 border-orange-500 opacity-0 hover:opacity-100 transition-opacity"></div>
             </div>
 
-            <div class="break-inside-avoid">
-                <div class="bg-white p-3 rounded-2xl shadow-sm border border-gray-100 hover:shadow-xl transition-shadow duration-300">
-                    <img src="foto4.jpg" alt="Colaboradores Engrecon" class="rounded-xl w-full">
-                    <p class="mt-3 text-center text-sm font-semibold text-gray-600">Equipe Engrecon</p>
-                </div>
+            <div class="photo-card relative overflow-hidden rounded-2xl bg-gray-900 border border-gray-800">
+                <img src="img/foto4.jpg" alt="Páscoa Engrecon" class="w-full h-[450px] object-cover">
+                <div class="absolute inset-0 border-b-4 border-orange-500 opacity-0 hover:opacity-100 transition-opacity"></div>
             </div>
 
-            <div class="break-inside-avoid">
-                <div class="bg-white p-3 rounded-2xl shadow-sm border border-gray-100 hover:shadow-xl transition-shadow duration-300">
-                    <img src="foto5.jpg" alt="Páscoa na Fábrica" class="rounded-xl w-full">
-                    <p class="mt-3 text-center text-sm font-semibold text-gray-600">Orgulho em Pertencer</p>
-                </div>
+            <div class="photo-card relative overflow-hidden rounded-2xl bg-gray-900 border border-gray-800">
+                <img src="img/foto5.jpg" alt="Páscoa Engrecon" class="w-full h-[450px] object-cover">
+                <div class="absolute inset-0 border-b-4 border-orange-500 opacity-0 hover:opacity-100 transition-opacity"></div>
             </div>
 
         </div>
     </main>
 
-    <footer class="mt-12 py-10 bg-slate-900 text-white text-center">
-        <p class="font-light opacity-80 italic">"Páscoa é tempo de renovação e gratidão."</p>
-        <div class="mt-4 flex justify-center items-center gap-2">
-            <span class="w-8 h-[1px] bg-orange-500"></span>
-            <p class="text-sm font-bold tracking-widest uppercase">CIE Engrecon 2026</p>
-            <span class="w-8 h-[1px] bg-orange-500"></span>
-        </div>
+    <footer class="py-16 border-t border-gray-900 text-center">
+        <p class="text-gray-600 text-xs font-bold tracking-[0.3em] uppercase">
+            CIE <span class="text-orange-500">ENGRECON</span> &copy; 2026
+        </p>
     </footer>
 
 </body>
