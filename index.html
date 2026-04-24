@@ -11,15 +11,30 @@
             font-family: 'Inter', sans-serif; 
             background-color: #000000; 
         }
-        /* Barra de rolagem personalizada em laranja */
         ::-webkit-scrollbar { width: 8px; }
         ::-webkit-scrollbar-track { background: #000; }
         ::-webkit-scrollbar-thumb { background: #f97316; border-radius: 10px; }
+        
+        /* Ajuste para garantir que a logo não fique gigante */
+        .logo-img {
+            max-height: 60px;
+            width: auto;
+        }
+
+        /* Estilo para impressão */
+        @media print {
+            body { background-color: #000 !important; -webkit-print-color-adjust: exact; }
+            .no-print { display: none; }
+        }
     </style>
 </head>
 <body class="text-white antialiased">
 
-    <header class="py-16 px-6 text-center border-b border-gray-900 bg-zinc-950">
+    <nav class="p-6 flex justify-start items-center bg-zinc-950 border-b border-gray-900">
+        <img src="img/logo.png" alt="CIE Engrecon Logo" class="logo-img">
+    </nav>
+
+    <header class="py-12 px-6 text-center bg-zinc-950">
         <h1 class="text-3xl md:text-5xl font-black uppercase tracking-tighter italic">
             Acompanhe como foi a <span class="text-orange-500">Páscoa</span> 
             <br> na <span class="text-orange-500">CIE Engrecon</span>
@@ -30,24 +45,36 @@
     <main class="max-w-[1400px] mx-auto py-12 px-6">
         <div class="flex flex-wrap justify-center gap-8">
             
-            <div class="flex-none w-full sm:w-[320px] lg:w-[420px] overflow-hidden rounded-xl border border-gray-800 bg-zinc-900 transition-all duration-500 hover:border-orange-500">
-                <img src="img/foto1.jpeg" alt="Páscoa na CIE Engrecon" class="w-full h-[550px] object-cover">
+            <div class="flex-none w-full sm:w-[320px] lg:w-[400px] overflow-hidden rounded-xl border border-gray-800 bg-zinc-900 transition-all duration-500 hover:border-orange-500">
+                <img src="img/foto1.jpeg" class="w-full h-[500px] object-cover">
             </div>
 
-            <div class="flex-none w-full sm:w-[320px] lg:w-[420px] overflow-hidden rounded-xl border border-gray-800 bg-zinc-900 transition-all duration-500 hover:border-orange-500">
-                <img src="img/foto2.jpeg" alt="Páscoa na CIE Engrecon" class="w-full h-[550px] object-cover">
+            <div class="flex-none w-full sm:w-[320px] lg:w-[400px] overflow-hidden rounded-xl border border-gray-800 bg-zinc-900 transition-all duration-500 hover:border-orange-500">
+                <img src="img/foto2.jpeg" class="w-full h-[500px] object-cover">
             </div>
 
-            <div class="flex-none w-full sm:w-[320px] lg:w-[420px] overflow-hidden rounded-xl border border-gray-800 bg-zinc-900 transition-all duration-500 hover:border-orange-500">
-                <img src="img/foto3.jpeg" alt="Páscoa na CIE Engrecon" class="w-full h-[550px] object-cover">
+            <div class="flex-none w-full sm:w-[320px] lg:w-[400px] overflow-hidden rounded-xl border border-gray-800 bg-zinc-900 transition-all duration-500 hover:border-orange-500">
+                <img src="img/foto3.jpeg" class="w-full h-[500px] object-cover">
             </div>
 
-            <div class="flex-none w-full sm:w-[320px] lg:w-[420px] overflow-hidden rounded-xl border border-gray-800 bg-zinc-900 transition-all duration-500 hover:border-orange-500">
-                <img src="img/foto4.jpeg" alt="Páscoa na CIE Engrecon" class="w-full h-[550px] object-cover">
+            <div class="flex-none w-full sm:w-[320px] lg:w-[400px] overflow-hidden rounded-xl border border-gray-800 bg-zinc-900 transition-all duration-500 hover:border-orange-500">
+                <img src="img/foto4.jpeg" class="w-full h-[500px] object-cover">
             </div>
 
-            <div class="flex-none w-full sm:w-[320px] lg:w-[420px] overflow-hidden rounded-xl border border-gray-800 bg-zinc-900 transition-all duration-500 hover:border-orange-500">
-                <img src="img/foto5.jpeg" alt="Páscoa na CIE Engrecon" class="w-full h-[550px] object-cover">
+            <div class="flex-none w-full sm:w-[320px] lg:w-[400px] overflow-hidden rounded-xl border border-gray-800 bg-zinc-900 transition-all duration-500 hover:border-orange-500">
+                <img src="img/foto5.jpeg" class="w-full h-[500px] object-cover">
+            </div>
+
+            <div class="flex-none w-full sm:w-[320px] lg:w-[400px] overflow-hidden rounded-xl border border-gray-800 bg-zinc-900 transition-all duration-500 hover:border-orange-500">
+                <img src="img/foto6.jpeg" class="w-full h-[500px] object-cover">
+            </div>
+
+            <div class="flex-none w-full sm:w-[320px] lg:w-[400px] overflow-hidden rounded-xl border border-gray-800 bg-zinc-900 transition-all duration-500 hover:border-orange-500">
+                <img src="img/foto7.jpeg" class="w-full h-[500px] object-cover">
+            </div>
+
+            <div class="flex-none w-full sm:w-[320px] lg:w-[400px] overflow-hidden rounded-xl border border-gray-800 bg-zinc-900 transition-all duration-500 hover:border-orange-500">
+                <img src="img/foto8.jpeg" class="w-full h-[500px] object-cover">
             </div>
 
         </div>
