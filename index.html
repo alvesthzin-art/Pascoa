@@ -11,27 +11,22 @@
             font-family: 'Inter', sans-serif; 
             background-color: #000000; 
         }
-        ::-webkit-scrollbar { width: 8px; }
-        ::-webkit-scrollbar-track { background: #000; }
-        ::-webkit-scrollbar-thumb { background: #f97316; border-radius: 10px; }
         
-        /* Ajuste para garantir que a logo não fique gigante */
-        .logo-img {
+        .invert-logo {
+            filter: brightness(0) invert(1);
             max-height: 60px;
             width: auto;
         }
 
-        /* Estilo para impressão */
-        @media print {
-            body { background-color: #000 !important; -webkit-print-color-adjust: exact; }
-            .no-print { display: none; }
-        }
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #000; }
+        ::-webkit-scrollbar-thumb { background: #f97316; border-radius: 10px; }
     </style>
 </head>
 <body class="text-white antialiased">
 
     <nav class="p-6 flex justify-start items-center bg-zinc-950 border-b border-gray-900">
-        <img src="img/logo.png" alt="CIE Engrecon Logo" class="logo-img">
+        <img src="img/logo.png" alt="CIE Engrecon Logo" class="invert-logo">
     </nav>
 
     <header class="py-12 px-6 text-center bg-zinc-950">
@@ -44,39 +39,30 @@
 
     <main class="max-w-[1400px] mx-auto py-12 px-6">
         <div class="flex flex-wrap justify-center gap-8">
-            
             <div class="flex-none w-full sm:w-[320px] lg:w-[400px] overflow-hidden rounded-xl border border-gray-800 bg-zinc-900 transition-all duration-500 hover:border-orange-500">
                 <img src="img/foto1.jpeg" class="w-full h-[500px] object-cover">
             </div>
-
             <div class="flex-none w-full sm:w-[320px] lg:w-[400px] overflow-hidden rounded-xl border border-gray-800 bg-zinc-900 transition-all duration-500 hover:border-orange-500">
                 <img src="img/foto2.jpeg" class="w-full h-[500px] object-cover">
             </div>
-
             <div class="flex-none w-full sm:w-[320px] lg:w-[400px] overflow-hidden rounded-xl border border-gray-800 bg-zinc-900 transition-all duration-500 hover:border-orange-500">
                 <img src="img/foto3.jpeg" class="w-full h-[500px] object-cover">
             </div>
-
             <div class="flex-none w-full sm:w-[320px] lg:w-[400px] overflow-hidden rounded-xl border border-gray-800 bg-zinc-900 transition-all duration-500 hover:border-orange-500">
                 <img src="img/foto4.jpeg" class="w-full h-[500px] object-cover">
             </div>
-
             <div class="flex-none w-full sm:w-[320px] lg:w-[400px] overflow-hidden rounded-xl border border-gray-800 bg-zinc-900 transition-all duration-500 hover:border-orange-500">
                 <img src="img/foto5.jpeg" class="w-full h-[500px] object-cover">
             </div>
-
             <div class="flex-none w-full sm:w-[320px] lg:w-[400px] overflow-hidden rounded-xl border border-gray-800 bg-zinc-900 transition-all duration-500 hover:border-orange-500">
                 <img src="img/foto6.jpeg" class="w-full h-[500px] object-cover">
             </div>
-
             <div class="flex-none w-full sm:w-[320px] lg:w-[400px] overflow-hidden rounded-xl border border-gray-800 bg-zinc-900 transition-all duration-500 hover:border-orange-500">
                 <img src="img/foto7.jpeg" class="w-full h-[500px] object-cover">
             </div>
-
             <div class="flex-none w-full sm:w-[320px] lg:w-[400px] overflow-hidden rounded-xl border border-gray-800 bg-zinc-900 transition-all duration-500 hover:border-orange-500">
                 <img src="img/foto8.jpeg" class="w-full h-[500px] object-cover">
             </div>
-
         </div>
     </main>
 
