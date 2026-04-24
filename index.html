@@ -12,8 +12,9 @@
             background-color: #000000; 
         }
         
-        .invert-logo {
-            filter: brightness(0) invert(1);
+        /* FILTRO LARANJA PARA A LOGO */
+        .logo-orange {
+            filter: invert(58%) sepia(84%) saturate(2564%) hue-rotate(352deg) brightness(101%) contrast(96%);
             max-height: 60px;
             width: auto;
         }
@@ -26,7 +27,7 @@
 <body class="text-white antialiased">
 
     <nav class="p-6 flex justify-start items-center bg-zinc-950 border-b border-gray-900">
-        <img src="img/logo.png" alt="CIE Engrecon Logo" class="invert-logo">
+        <img src="img/logo.png" alt="CIE Engrecon Logo" class="logo-orange">
     </nav>
 
     <header class="py-12 px-6 text-center bg-zinc-950">
